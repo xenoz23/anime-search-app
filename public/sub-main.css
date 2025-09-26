@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+h1 {
+  font-family: "Honk", sans-serif;
+  font-size: 4rem;
+}
+
+footer {
+  font-family: "Honk", sans-serif;
+  font-size: 3rem;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  width: 10%;
+  border-radius: 10px;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+body {
+    font-family: "Monteserrat", sans-serif;
+    text-align: center;
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, #b2b2f0 0.5px);
+    background-size: 10px 10px;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px; /* space between cards */
+  }
+  
+  /* Anime card */
+  .anime-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 290px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .anime-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card image */
+  .anime-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Card content */
+  .anime-card .content {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .anime-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .anime-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+    text-align: justify;
+    max-height: 300px; /* optional scroll for very long descriptions */
+    overflow-y: auto;
+  }
+  
+  /* Responsive layout for mobile */
+  @media (max-width: 500px) {
+    .anime-card {
+      max-width: 90%;
+    }
+  
+    .anime-card h2 {
+      font-size: 1rem;
+    }
+  
+    .anime-card p {
+      font-size: 0.9rem;
+    }
+    button {
+      width: 100px;
+    }
+    footer {
+      font-family: "Honk", sans-serif;
+      font-size: 2rem;
+    }
+  }
+  
